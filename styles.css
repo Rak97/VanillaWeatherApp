@@ -7,6 +7,7 @@
 }
 body {
   margin: 40px auto;
+  background-image:url("src/snow.gif");
   background-color: #083836;
 }
 h1 {
