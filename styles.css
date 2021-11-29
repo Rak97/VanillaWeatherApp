@@ -2,7 +2,7 @@
   max-width: 725px;
   margin: 0 auto;
   padding: 15px 60px;
-  background-image: linear-gradient(to right, #2958a8, #42c1c8);
+  border-style: solid;
   border-radius: 15px;
 }
 body {
