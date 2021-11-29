@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5cdd87bd63.js" crossorigin="anonymous"></script>
-    <title>Weather Applet</title>
+    <title>Weather App</title>
     <style>
       .containerColour {
   max-width: 725px;
@@ -19,8 +19,12 @@
   border-radius: 15px;
 }
 body {
+  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+  background-size: cover; 
+  height: 100vh;
+  padding:0;
   margin: 40px auto;
-  background-color: #083836;
+  background-color: blue;
 }
 h1 {
   text-align: left;
@@ -107,7 +111,7 @@ h3 strong {
   padding: 10px;
 }
 .search-box-location {
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%);
   background: transparent;
   height: 40px;
