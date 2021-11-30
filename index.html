@@ -208,7 +208,7 @@ body {
                                 <img src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png" alt="clear" />
                                 <span><strong id="temperature"></strong> </span> <span class="units">°C | <a href="#">°F</a></span>
                             </h3>
-                            <h3 id="descripition"></h3>
+                            <h3 id="descripition">Scattered Clouds</h3>
                             <h3>Wind Speed: 4 km/h</h3>
                             <h3>Precipition: 0%</h3>
                             <h3>Humidity: 90%</h3>
@@ -247,12 +247,15 @@ body {
                 Kandiah</small>
             <script>
             
-            function displayTemperature(response) {
+               function displayTemperature(response) { 
+                let descripitionElement = document.querySelector("#descripition");
                 let cityElement = document.querySelector("#city");
                 let temperatureElement = document.querySelector("#temperature");
                 temperatureElement.innerHTML = Math.round (response.data.main.temp);
                 cityElement.innerHTML = response.data.name;
-            }
+                descripitionElement.innerHTML = response.data.weather[0].description;
+                }
+
                 let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
                 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=${apiKey}&units=metric`;
                 axios.get(apiUrl).then(displayTemperature);
