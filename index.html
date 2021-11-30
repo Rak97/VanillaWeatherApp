@@ -250,7 +250,7 @@ body {
             function displayTemperature(response) {
                 let cityElement = document.querySelector("#city");
                 let temperatureElement = document.querySelector("#temperature");
-                temperatureElement.innerHTML = response.data.main.temp;
+                temperatureElement.innerHTML = Math.round (response.data.main.temp);
                 cityElement.innerHTML = response.data.name;
             }
                 let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
