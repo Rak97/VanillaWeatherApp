@@ -176,7 +176,7 @@ body {
             .search-box:hover>.search-txt {
                 width: 240px;
                 padding: 0 6px;
-                color: red;
+                color: navy;
             }
             .search-box-location:hover > .search-txt-app {
                 width: 175px;
