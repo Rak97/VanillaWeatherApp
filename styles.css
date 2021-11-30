@@ -1,22 +1,24 @@
 .containerColour {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 15px 15px;
-  border-style: solid;
+   margin: 0 auto;
+     padding: 25px 50px;
+   border-style: solid;
   border-radius: 15px;
   background-image:url("src/snow.gif");
   background-size:100%;
   background-size: cover; 
   height: 65vh;
-}
-body {
-  margin: 40px auto;
-  padding:0;
-  background-color: white;
-}
- h1 {
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
+            }
+        
+            body {
+                margin: 40px auto;
+                padding: 0;
+                background-color: white;
+            }
+        
+            h1 {
+                text-align: left;
+                font-family: "Josefin Sans", sans-serif;
                 margin: 16px auto;
                 padding: 0%;
                 font-weight: 600;
@@ -175,10 +177,9 @@ body {
             .search-box:hover>.search-txt {
                 width: 240px;
                 padding: 0 6px;
-                color: navy;
+                color: red;
             }
             .search-box-location:hover > .search-txt-app {
                 width: 175px;
                 padding: 0 6px;
             }   
-      
