@@ -27,215 +27,236 @@ body {
   padding:0;
   background-color: white;
 }
-h1 {
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
-  margin: 16px auto;
-  padding: 0%;
-  font-weight: 600;
-  font-size: 27px;
-  color: black;
-}
-
-h3,
-h4 {
-  text-align: left;
-  font-family: "Josefin Sans", sans-serif;
-  margin: 16px auto;
-  padding: 0%;
-  font-size: 16px;
-  color: black;
-}
-
-img {
-  position: relative;
-  right: 8px;
-}
-small {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bolder;
-  margin: 325px;
-  color: black;
-}
-a {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: #a7b4b7;
-}
-
-ul {
-  list-style: none;
-  padding: 25px 145px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-}
-::placeholder {
-  /* Firefox */
-  color: white;
-  opacity: 1;
-  text-align: center;
-  font-size: 25px;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
-h3 strong {
-  font-size: 30px;
-  font-weight: 300;
-}
-.units {
-  position: relative;
-  font-size: 14px;
-  top: -10px;
-}
-
-.search-box {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  height: 40px;
-  border-radius: 35px;
-  padding: 10px;
-}
-.search-box-location {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  height: 40px;
-  border-radius: 35px;
-  padding: 10px;
-}
-.search-btn {
-  color: black;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: none;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.search-btn-location {
-  color: black;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: none;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-}
-
-.search-txt {
-  border: none;
-  outline: none;
-  background: none;
-  padding: 0 auto;
-  background-position: center;
-  color: navy;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  font-size: 25px;
-}
-.search-txt-app {
-  border: none;
-  outline: none;
-  background: none;
-  padding: 0 auto;
-  background-position: center;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-}
-.search-box:hover > .search-txt {
-  width: 240px;
-  padding: 0 6px;
-}
-.search-box-location:hover > .search-txt-app {
-  width: 175px;
-  padding: 0 6px;
-}
-    </style>
-</head>
-<body>
-  <div class="containerColour">
-    <div class="container">
-      <div class="row">
-        <div class="col-6"><h4>Weather App</h4>
-          <h1>Markham, Canada</h1>
-          <h3>Sunday November 28, 2021</h3>
-          <h3>3:03 PM</h3>
-          <h3>
-            <img src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png" alt="clear" />
-            <strong>4</strong> <span class="units">°C | <a href="#">°F</a></span>
-          </h3>
-          <h3>Snowy</h3>
-          <h3>Wind Speed: 4 km/h</h3>
-          <h3>Precipition: 0%</h3>
-          <h3>Humidity: 90%</h3>
-        </div>
-        <div class="col-md-6">
-          <br>
-          <br> 
-          <br>
-          <br>
-          <ul>
-            <li>
-            <div class="search-box-location">
-              <input class="search-txt-app" type="text" placeholder="Click There ➜"  disabled>
-              <a class="search-btn-location" href="#">
-                <i class="fas fa-search-location fa-3x"></i>
-              </a>
-            </div>
-          </li>
-          </ul>
-          <ul> 
-            <li> 
-          <div class="search-box">
-            <input class="search-txt" type="text" name=" " placeholder="Search For Any City ..." />
-            <a class="search-btn" href="#">
-              <i class="fas fa-search fa-3x"></i>
-            </a>
-          </div>
-          </li>
-          </ul>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-<small><a href="https://github.com/Rak97/VanillaWeatherApp" target="_blank">Open-Source</a> by: Rakave Kandiah</small>
-    <script> 
-   let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Markham&appid=${apiKey}&units=metric`;
+            h1 {
+                text-align: left;
+                font-family: "Josefin Sans", sans-serif;
+                margin: 16px auto;
+                padding: 0%;
+                font-weight: 600;
+                font-size: 27px;
+                color: black;
+            }
         
-        console.log(apiUrl);
-    </script>
+            h3,
+            h4 {
+                text-align: left;
+                font-family: "Josefin Sans", sans-serif;
+                margin: 16px auto;
+                padding: 0%;
+                font-size: 16px;
+                color: black;
+            }
+        
+            img {
+                position: relative;
+                right: 8px;
+            }
+        
+            small {
+                font-family: "Josefin Sans", sans-serif;
+                font-weight: bolder;
+                margin: 325px;
+                color: black;
+            }
+        
+            a {
+                color: darkred;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        
+            a:hover {
+                color: green;
+            }
+        
+            ul {
+                list-style: none;
+                padding: 25px 145px;
+                text-align: center;
+                font-family: "Josefin Sans", sans-serif;
+            }
+        
+            ::placeholder {
+                /* Firefox */
+                color: white;
+                opacity: 1;
+                text-align: center;
+                font-size: 25px;
+            }
+        
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+        
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+        
+            h3 strong {
+                font-size: 30px;
+                font-weight: 300;
+            }
+        
+            .units {
+                position: relative;
+                font-size: 14px;
+                top: -10px;
+            }
+        
+            .search-box {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                height: 40px;
+                border-radius: 35px;
+                padding: 10px;
+            }
+        
+            .search-box-location {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                height: 40px;
+                border-radius: 35px;
+                padding: 10px;
+            }
+        
+            .search-btn {
+                color: black;
+                float: right;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: none;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .search-btn-location {
+                color: black;
+                float: right;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: none;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            a {
+                text-decoration: none;
+            }
+        
+            .search-txt {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 0 auto;
+                background-position: center;
+                transition: 0.3s ease-out;
+                line-height: 40px;
+                width: 0;
+                font-family: "Josefin Sans", sans-serif;
+                text-align: center;
+                font-size: 25px;
+            }
+        
+            .search-txt-app {
+                border: none;
+                outline: none;
+                background: none;
+                padding: 0 auto;
+                background-position: center;
+                transition: 0.3s ease-out;
+                line-height: 40px;
+                width: 0;
+                font-family: "Josefin Sans", sans-serif;
+                text-align: center;
+            }
+        
+            .search-box:hover>.search-txt {
+                width: 240px;
+                padding: 0 6px;
+                color: red;
+            }
+            .search-box-location:hover > .search-txt-app {
+                width: 175px;
+                padding: 0 6px;
+            }   
+        </style>
+</head>
+        <body>
+            <div class="containerColour">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>Weather App</h4>
+                            <h1 id="city"></h1>
+                            <h3>Sunday November 28, 2021</h3>
+                            <h3>3:03 PM</h3>
+                            <h3>
+                                <img src="https://ssl.gstatic.com/onebox/weather/64/snow_light.png" alt="clear" />
+                                <span><strong id="temperature"></strong> </span> <span class="units">°C | <a href="#">°F</a></span>
+                            </h3>
+                            <h3 id="descripition"></h3>
+                            <h3>Wind Speed: 4 km/h</h3>
+                            <h3>Precipition: 0%</h3>
+                            <h3>Humidity: 90%</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <ul>
+                                <li>
+                                    <div class="search-box-location">
+                                        <input class="search-txt-app" type="text" placeholder="Click There ➜" disabled>
+                                        <a class="search-btn-location" href="#">
+                                            <i class="fas fa-search-location fa-3x"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="search-box">
+                                        <input class="search-txt" type="text" name=" " placeholder="Search For Any City" />
+                                        <a class="search-btn" href="#">
+                                            <i class="fas fa-search fa-3x"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <small><a href="https://github.com/Rak97/VanillaWeatherApp" target="_blank">Open-Source</a> by: Rakave
+                Kandiah</small>
+            <script>
+            
+            function displayTemperature(response) {
+                let cityElement = document.querySelector("#city");
+                let temperatureElement = document.querySelector("#temperature");
+                temperatureElement.innerHTML = response.data.main.temp;
+                cityElement.innerHTML = response.data.name;
+            }
+                let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
+                let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Markham&appid=${apiKey}&units=metric`;
+                axios.get(apiUrl).then(displayTemperature);
+
+                </script>
 </body>
 </html>
