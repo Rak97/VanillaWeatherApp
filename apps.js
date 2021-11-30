@@ -38,6 +38,19 @@
                 date.innerHTML = `${weekdays[currentDate.getDay()]} ${months[currentDate.getUTCMonth()]
                     } ${currentDate.getDate()}`;
                 }
+                var dt = new Date();
+                document.getElementById("time").innerHTML = (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
+                
+                const hour = new Date().getHours();
+                    let greeting;
+
+                    if (hour < 12) {
+                        greeting = "AM";
+                    } else {
+                        greeting = "PM";
+                    }
+
+                    document.getElementById("format").innerHTML = greeting;
 
                 let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
                 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Markham&appid=${apiKey}&units=metric`;
