@@ -1,18 +1,19 @@
 .containerColour {
-  max-width: 700px;
-   margin: 0 auto;
-     padding: 25px 50px;
-   border-style: solid;
-  border-radius: 15px;
-  background-image:url("src/snow.gif");
-  background-size:100%;
-  background-size: cover; 
-  height: 65vh;
+                max-width: 685px;
+                margin: 0px auto;
+                padding: 15px 45px;
+                border-style: solid;
+                border-radius: 15px;
+               background-color: orangered;
+                background-size: 100%;
+                background-size: cover;
+                background-blend-mode: luminosity;
+                height: 70vh;
             }
         
             body {
-                margin: 85px auto;
-                padding: 0;
+                margin: 70px auto;
+                padding: 0 auto;
                 background-color: white;
             }
         
@@ -22,7 +23,7 @@
                 margin: 16px auto;
                 padding: 0%;
                 font-weight: 600;
-                font-size: 27px;
+                font-size: 32px;
                 color: black;
             }
         
@@ -32,7 +33,7 @@
                 font-family: "Josefin Sans", sans-serif;
                 margin: 16px auto;
                 padding: 0%;
-                font-size: 16px;
+                font-size: 18px;
                 color: black;
                 text-transform: capitalize;
             }
@@ -45,7 +46,7 @@
             small {
                 font-family: "Josefin Sans", sans-serif;
                 font-weight: bolder;
-                margin: 325px;
+                margin: 400px;
                 color: black;
             }
         
