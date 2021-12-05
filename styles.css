@@ -9,6 +9,7 @@
                 background-size: cover;
                 background-blend-mode: luminosity;
                 height: 70vh;
+                font-family: "Josefin Sans", sans-serif;
             }
 body {
                 margin: 70px auto;
