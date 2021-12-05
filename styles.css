@@ -65,28 +65,6 @@ p {
                 color: green;
             }
         
-            ::placeholder {
-                /* Firefox */
-                color: orangered;
-                opacity: 1;
-                text-align: center;
-                font-size: 16px;
-            }
-        
-            :-ms-input-placeholder {
-                /* Internet Explorer 10-11 */
-                color: orangered;
-                text-align: center;
-                font-size: 16px;
-            }
-        
-            ::-ms-input-placeholder {
-                /* Microsoft Edge */
-                color: orangered;
-                text-align: center;
-                font-size: 16px;
-            }
-        
             h3 strong {
                 font-size: 50px;
                 font-weight: 300;
@@ -109,10 +87,6 @@ p {
             
             a {
                 text-decoration: none;
-            }
-            
-            former {
-               font-family: "Josefin Sans", sans-serif; 
             }
       
         h2 {
