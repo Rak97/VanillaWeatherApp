@@ -1,4 +1,4 @@
-        function displayTemperature(response) { 
+  function displayTemperature(response) { 
             console.log(response.data);
                 let descripitionElement = document.querySelector("#descripition");
                 let cityElement = document.querySelector("#city");
@@ -44,7 +44,8 @@
                 ];
                 date.innerHTML = `${weekdays[currentDate.getDay()]} ${months[currentDate.getUTCMonth()]
                     } ${currentDate.getDate()}`;
-                }
+            
+            };
                 
                 var dt = new Date();
                 document.getElementById("time").innerHTML = (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
@@ -57,10 +58,22 @@
                     } else {
                         greeting = "PM";
                     }
-
+                
                     document.getElementById("format").innerHTML = greeting;
 
-                let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
-                let city = "Markham";
-                let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-                axios.get(apiUrl).then(displayTemperature);
+              function search(city) {
+                    let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
+                    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+                    axios.get(apiUrl).then(displayTemperature);
+                }
+
+                function handleSubmit(event) {
+                    event.preventDefault();
+                    let cityInputElement = document.querySelector("#city-input");
+                    search(cityInputElement.value);
+                }
+
+                let form = document.querySelector("#search-form");
+                form.addEventListener("submit", handleSubmit);
+             
+                search("Yellowknife");
