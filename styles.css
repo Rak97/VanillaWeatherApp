@@ -29,7 +29,7 @@ p {
                 padding:0;
                 font-weight: 600;
                 font-size: 36px;
-                color: whitesmoke;
+                color: grey;
             }
         
             h3,
@@ -39,7 +39,7 @@ p {
                 margin: 5px auto;
                 padding: 5px auto;
                 font-size: 18px;
-                color: whitesmoke;
+                color: grey;
                 text-transform: capitalize;
             }
         
@@ -95,10 +95,10 @@ p {
             font-size: 20px;
             margin:0;
             padding:0;
-            color: whitesmoke;
+            color: grey;
         }
         ul {
             list-style: none;
             margin-bottom: 1.5px;
-            color: whitesmoke;
+            color: grey;
         }
