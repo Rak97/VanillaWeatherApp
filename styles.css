@@ -10,20 +10,24 @@
                 background-blend-mode: luminosity;
                 height: 70vh;
             }
-        
-            body {
+body {
                 margin: 70px auto;
-                padding: 0 auto;
+                padding: 0px auto;
                 background-color: white;
+                text-align: center;
+            }
+
+p {
+                text-align: left;
             }
         
             h1 {
-                text-align: left;
+                text-align: center;
                 font-family: "Josefin Sans", sans-serif;
-                margin: 16px auto;
-                padding: 0%;
+                margin: 15px;
+                padding:0;
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 36px;
                 color: black;
             }
         
@@ -31,8 +35,8 @@
             h4 {
                 text-align: left;
                 font-family: "Josefin Sans", sans-serif;
-                margin: 16px auto;
-                padding: 0%;
+                margin: 5px auto;
+                padding: 5px auto;
                 font-size: 18px;
                 color: black;
                 text-transform: capitalize;
@@ -51,7 +55,7 @@
             }
         
             a {
-                color: darkred;
+                color: blue;
                 background-color: transparent;
                 text-decoration: none;
             }
@@ -60,127 +64,64 @@
                 color: green;
             }
         
-            ul {
-                list-style: none;
-                padding: 25px 145px;
-                text-align: center;
-                font-family: "Josefin Sans", sans-serif;
-            }
-        
             ::placeholder {
                 /* Firefox */
-                color: white;
+                color: orangered;
                 opacity: 1;
                 text-align: center;
-                font-size: 25px;
+                font-size: 16px;
             }
         
             :-ms-input-placeholder {
                 /* Internet Explorer 10-11 */
-                color: white;
+                color: orangered;
                 text-align: center;
-                font-size: 25px;
+                font-size: 16px;
             }
         
             ::-ms-input-placeholder {
                 /* Microsoft Edge */
-                color: white;
+                color: orangered;
                 text-align: center;
-                font-size: 25px;
+                font-size: 16px;
             }
         
             h3 strong {
-                font-size: 36px;
+                font-size: 50px;
                 font-weight: 300;
             }
         
             .units {
                 position: relative;
-                font-size: 14px;
-                top: -10px;
+                font-size: 16px;
             }
-        
-            .search-box {
-                position: absolute;
-                transform: translate(-50%, -50%);
-                background: transparent;
-                height: 40px;
-                border-radius: 35px;
-                padding: 10px;
+            .unit {
+                position: relative;
+                font-size: 16px;
+                top: -20px;
             }
-        
-            .search-box-location {
-                position: absolute;
-                transform: translate(-50%, -50%);
-                background: transparent;
-                height: 40px;
-                border-radius: 35px;
-                padding: 10px;
+            .line {
+                position: relative;
+                font-size: 16px;
+                top: -20px;
             }
-        
-            .search-btn {
-                color: black;
-                float: right;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: none;
-                background-position: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        
-            .search-btn-location {
-                color: black;
-                float: right;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: none;
-                background-position: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        
+            
             a {
                 text-decoration: none;
             }
-        
-            .search-txt {
-                border: none;
-                outline: none;
-                background: none;
-                padding: 0 auto;
-                background-position: center;
-                transition: 0.3s ease-out;
-                line-height: 40px;
-                width: 0;
-                font-family: "Josefin Sans", sans-serif;
-                text-align: center;
-                font-size: 25px;
+            
+            former {
+               font-family: "Josefin Sans", sans-serif; 
             }
-        
-            .search-txt-app {
-                border: none;
-                outline: none;
-                background: none;
-                padding: 0 auto;
-                background-position: center;
-                transition: 0.3s ease-out;
-                line-height: 40px;
-                width: 0;
-                font-family: "Josefin Sans", sans-serif;
-                text-align: center;
-            }
-        
-            .search-box:hover>.search-txt {
-                width: 240px;
-                padding: 0 6px;
-                color: red;
-            }
-            .search-box-location:hover > .search-txt-app {
-                width: 175px;
-                padding: 0 6px;
-            }   
+      
+        h2 {
+            text-align: center;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            margin:0;
+            padding:0;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 1.5px;
+        }
