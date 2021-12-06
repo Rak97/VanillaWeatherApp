@@ -1,13 +1,16 @@
-  function displayTemperature(response) { 
-            console.log(response.data);
+ 
+            function displayTemperature(response) { 
                 let descripitionElement = document.querySelector("#descripition");
                 let cityElement = document.querySelector("#city");
                 let temperatureElement = document.querySelector("#temperature");
                 let humidityElement = document.querySelector("#humidity");
                 let windElement = document.querySelector("#wind");
                 let iconElement = document.querySelector("#icon");
+
+                celciusTemperature = response.data.main.temp; //Conversion 
+
                 document.getElementById("year").innerHTML = new Date().getFullYear();
-                temperatureElement.innerHTML = Math.round (response.data.main.temp);
+                temperatureElement.innerHTML = Math.round (celciusTemperature); //conversion
                 cityElement.innerHTML = response.data.name;
                 descripitionElement.innerHTML = response.data.weather[0].description;
                 humidityElement.innerHTML = response.data.main.humidity;
@@ -17,6 +20,8 @@
                     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
                 );
                 
+                celciusTemperature = response.data.main.temp;
+
                 let currentDate = new Date();
                 let date = document.querySelector("#date");
                 let weekdays = [
@@ -46,7 +51,7 @@
                     } ${currentDate.getDate()}`;
             
             };
-                
+                //Time
                 var dt = new Date();
                 document.getElementById("time").innerHTML = (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
                 
@@ -78,12 +83,14 @@
              
                 search("Yellowknife");
 
- //Conversion 
+                //Conversion 
+
+                let celciusTemperature = null;
 
                 function convertToFa(event) {
                 event.preventDefault();
                 let temperature= document.querySelector("#temperature");
-                temperature.innerHTML = Math.round((Math.round(`${temperature.innerHTML}`) * 9) / 5 + 32);
+                temperature.innerHTML = Math.round((Math.round(`${celciusTemperature}`) * 9) / 5 + 32);
                 faLink.classList.add("convert");
                 celLink.classList.remove("convert");
                 }
@@ -101,3 +108,4 @@
 
                 let celLink = document.querySelector("#celcius");
                 celLink.addEventListener("click", convertToCel);
+
