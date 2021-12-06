@@ -77,3 +77,27 @@
                 form.addEventListener("submit", handleSubmit);
              
                 search("Yellowknife");
+
+ //Conversion 
+
+                function convertToFa(event) {
+                event.preventDefault();
+                let temperature= document.querySelector("#temperature");
+                temperature.innerHTML = Math.round((Math.round(`${temperature.innerHTML}`) * 9) / 5 + 32);
+                faLink.classList.add("convert");
+                celLink.classList.remove("convert");
+                }
+
+                let faLink = document.querySelector("#fahrenheit");
+                faLink.addEventListener("click", convertToFa);
+
+                function convertToCel(event) {
+                event.preventDefault();
+                let temperature = document.querySelector("#temperature");
+                temperature.innerHTML = Math.round((Math.round(`${temperature.innerHTML}`) - 32) * (5 / 9));
+                celLink.classList.add("convert");
+                faLink.classList.remove("convert");
+                }
+
+                let celLink = document.querySelector("#celcius");
+                celLink.addEventListener("click", convertToCel);
