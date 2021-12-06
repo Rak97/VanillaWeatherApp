@@ -87,18 +87,24 @@ p {
             margin-bottom: 1.5px;
             color: black;
         }
-   .convert {
+      .convert {
             font-size: 16px;
-            top: -20px;
-            position: relative;
+            position: static;
+            font-weight: bold;
         }
         .unit {
             font-size: 16px;
-            top: -20px;
             position: relative;
+            font-weight: bold;
         }
         .line {
-            top: -20px;
             position: relative;
             font-size: 16px;
+        }
+        .conversion .convert {
+            color: black;
+            cursor: default;
+        }
+        .conversion .convert:hover {
+            color: red;
         }
